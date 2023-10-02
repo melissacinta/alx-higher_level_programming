@@ -71,16 +71,16 @@ void free_listint(listint_t *head)
 int check_cycle(listint_t *list)
 {
 	listint_t *slow = list;
-	listint_t *fast = list;
+	listint_t *optimal = list;
 
 	if (!list)
 		return (0);
 
-	while (slow && fast && fast->next)
+	while (slow && optimal && optimal->next)
 	{
 		slow = slow->next;
-		fast = fast->next->next;
-		if (slow == fast)
+		optimal = optimal->next->next;
+		if (slow == optimal)
 			return (1);
 	}
 

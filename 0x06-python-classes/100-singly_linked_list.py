@@ -1,14 +1,4 @@
-elf.__data)
-
-    @data.setter
-        def data(self, value):
-                    if not isinstance(value, int):
-                                    raise TypeError("data must be an integer")
-                                        self.__data = value
-
-                                            @property
-                                                def next_node(self):
-                                                            """Get/set the next_node of#!/usr/bin/python3
+#!/usr/bin/python3
 
 """Define classes for a singly-linked list."""
 
@@ -29,7 +19,17 @@ class Node:
     @property
     def data(self):
         """Get/set the data of the Node."""
-        return  the Node."""
+        return (self.__data)
+
+    @data.setter
+    def data(self, value):
+        if not isinstance(value, int):
+            raise TypeError("data must be an integer")
+        self.__data = value
+
+    @property
+    def next_node(self):
+        """Get/set the next_node of the Node."""
         return (self.__next_node)
 
     @next_node.setter

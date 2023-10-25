@@ -39,6 +39,7 @@ class Square:
             [print(" ", end="") for j in range(0, self.__position[0])]
 @size.setter
     def size(self, value):
+        """ Define the size of a square"""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
         elif value < 0:
@@ -52,6 +53,7 @@ class Square:
 
     @position.setter
     def position(self, value):
+        """ Define the position of a square"""
         if (not isinstance(value, tuple) or
                 len(value) != 2 or
                 not all(isinstance(num, int) for num in value) or

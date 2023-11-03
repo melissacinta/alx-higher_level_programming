@@ -5,4 +5,4 @@ def raise_exception_msg(message=""):
     Args:
         message(string): message to be thrown
     """
-    raise NameError(message) 
+    raise NameError(message)

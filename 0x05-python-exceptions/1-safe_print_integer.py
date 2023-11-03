@@ -5,7 +5,7 @@ def safe_print_integer(value):
 
     Args:
         value(int): integer to print
-    
+
     Returns:
         True - if value has been corrected printed
         otherwise returns false

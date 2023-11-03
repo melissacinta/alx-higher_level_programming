@@ -2,7 +2,7 @@
 
 def safe_print_list(my_list=[], x=0):
     """Print x elements in a list
-    
+
     Args:
         my_list(list): contains a list of any type
         x(int): number of elements to print.

@@ -15,6 +15,7 @@ class Rectangle:
         """Initializes the data"""
         self.width = width
         self.height = height
+
         Rectangle.number_of_instances += 1
 
     @property
@@ -58,7 +59,7 @@ class Rectangle:
     def __str__(self):
         """print the rectangle with the character #"""
         if self.__width == 0 or self.__height == 0:
-            return("")
+            return ("")
 
         rect = []
         for i in range(self.__height):
@@ -66,10 +67,12 @@ class Rectangle:
             if i != self.__height - 1:
                 rect.append("\n")
         return ("".join(rect))
+
     def __repr__(self):
         """produces a string representation of the class"""
-        return "Rectangle(" + str(self.__width) + ", " + str(self.__height) + ")"
+        rect = str(self.__width) + ", " + str(self.__height)
+        return "Rectangle(" + rect + ")"
 
     def __del__(self):
         Rectangle.number_of_instances -= 1
-        print ("Bye rectangle...")
+        print("Bye rectangle...")

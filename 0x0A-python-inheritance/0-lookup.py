@@ -1,5 +1,4 @@
 #!/usr/bin/python3
-import sys
 
 """Function to look up available attributes and methods of an object"""
 
